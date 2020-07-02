@@ -509,6 +509,12 @@
     margin-bottom: 50px;
     position: relative;
     z-index: 40;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .right img {
@@ -526,12 +532,17 @@
     margin-bottom: 0px;
 }
 
+.svg {
+    display: flex;
+    flex-direction: column;
+}
+
 .right-card svg {
+    margin-right: 20px;
     width: 60px;
     height: auto;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 150px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 }
 
 .right-card h3 {
@@ -2035,6 +2046,69 @@ form {
 
     .faq-group h3 {
         font-size: 1.875em
+    }
+
+    /*-- -------------------------- -->
+    <---         CORINTHIANS        -->
+    <--- -------------------------- -*/
+
+    #corinthians-passage {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .corinthians {
+        margin: auto;
+        font-size: 1.5em;
+    }
+
+    /*-- -------------------------- -->
+    <---        TESTIMONIALS        -->
+    <--- -------------------------- -*/
+
+    #reviews {
+        background: url("/images/home2.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .review-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin: auto;
+        width: 900px;
+        padding-bottom: 100px;
+    }
+
+    .review-h3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .review-h3:before {
+        height: 180px;
+    }
+
+    .review-p {
+        margin: auto;
+        margin-bottom: 100px;
     }
 
     /*-- -------------------------- -->
